@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap");
+* {
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+.modal-container {
+  display: flex;
+  height: 650px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.modal-trivia {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 40%;
+  height: 50%;
+  background-color: aqua;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  transition: transform 1s;
+  transform: translateY(0%);
+  border-radius: 10px;
+}
+.modal input {
+  font-size: 1.5rem;
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+  width: 80%;
+}
+.modal h2 {
+  font-size: 2rem;
+}
+.modal-close {
+  transform: translateY(-200%);
+}
+
+#botonJugar {
+  width: 160px;
+  display: block;
+  margin: auto;
+  border: none;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 20px;
+  background-image: url(https://fondosmil.com/fondo/39907.jpg);
+  padding-bottom: 50px;
+  object-fit: cover;
+  font-family: "Nunito";
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+#juego {
+  max-width: 800px;
+  margin: auto;
+}
+.container-pregunta {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: #fff;
+}
+.container-pregunta label {
+  display: flex;
+  font-size: 22px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.container-pregunta input {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.correcta {
+  background-color: #a8f6eb;
+}
+.incorrecta {
+  background-color: #ff6666;
+}
+
+.resultado{
+  text-align: center;
+  color: #fff;
+}
+button {
+  width: fit-content;
+  display: block;
+  margin: auto;
+  border: none;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.resultado {
+  text-align: center;
+}
+
+.hideWelcome{
+  display: none;
+}
+
+.resultadoHide{
+  display: none;
+}
+
+#bienvenida{
+  color: #fff;
+  font-size: 25px;
+}

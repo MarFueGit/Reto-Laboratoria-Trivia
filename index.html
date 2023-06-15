@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/50d2d843f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>TRIVIA RETO DE LABORATORIA</title>
+  </head>
+  <body>
+    <!-- Empieza el codigo del modal -->
+    <div class="modal-trivia">
+      <div class="modal modal-close">
+        <h2>Bienvenidos a: ¿Que tanto sabes de peliculas?</h2>
+        <div class="modal-texto">
+          <input
+            type="text"
+            id="inputName"
+            placeholder="Escribe tu nombre completo"
+          />
+          <div>
+            <button id="botonJugar">Jugar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Termina el codigo del modal -->
+
+    <!-- Empieza el codigo de la trivia -->
+    <p class="hideWelcome" id="bienvenida"></p>
+    <h1>TRIVIA DE CINE <i class="fa-solid fa-film"></i></h1>
+    <section id="juego">
+      <div class="container-pregunta" id="p1">
+        <h2>1- ¿En que ciudad esta ambientada mujer bonita?</h2>
+        <div class="opciones">
+          <label for="">
+            <input
+              type="radio"
+              name="p1"
+              value="Chicago"
+              onclick="setRespuestaUsuario('Chicago')"
+              required
+            />
+            <span id="p1_0">Chicago</span>
+          </label>
+          <label for="">
+            <input
+              type="radio"
+              name="p1"
+              value="Miami"
+              onclick="setRespuestaUsuario('Miami')"
+            />
+            <span id="p1_1">Miami</span>
+          </label>
+          <label for="">
+            <input
+              type="radio"
+              name="p1"
+              value="Los Angeles"
+              onclick="setRespuestaUsuario('Los Angeles')"
+            />
+            <span id="p1_2">Los Angeles</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="container-pregunta" id="p2">
+        <h2>2- ¿Que ciudad esta plagada de fantasma?</h2>
+        <div class="opciones">
+          <label for="">
+            <input
+              type="radio"
+              name="p2"
+              onclick="setRespuestaUsuario2('New York')"
+              required
+            />
+            <span id="p2_0">New York</span>
+          </label>
+          <label for="">
+            <input
+              type="radio"
+              name="p2"
+              onclick="setRespuestaUsuario2('San francisco')"
+            />
+            <span id="p2_1">San francisco</span>
+          </label>
+          <label for="">
+            <input
+              type="radio"
+              name="p2"
+              onclick="setRespuestaUsuario2('Dallas')"
+            />
+            <span id="p2_2">Dallas</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="container-pregunta" id="p3">
+        <h2>3- ¿A qué año viajan Marty y Doc en "Volver al futuro II"?</h2>
+        <div class="opciones">
+          <label for="">
+            <input
+              type="radio"
+              name="p3"
+              onclick="setRespuestaUsuario3('2016')"
+              required
+            />
+            <span id="p3_0">2016</span>
+          </label>
+          <label for="">
+            <input
+              type="radio"
+              name="p3"
+              onclick="setRespuestaUsuario3('2015')"
+            />
+            <span id="p3_1">2015</span>
+          </label>
+          <label for="">
+            <input
+              type="radio"
+              name="p3"
+              onclick="setRespuestaUsuario3('2014')"
+            />
+            <span id="p3_2">2014</span>
+          </label>
+        </div>
+      </div>
+      <div class="resultado resultadoHide" id="mensajeCorrectas">
+        Obtuviste 3 respuestas correctas
+      </div>
+      <button id="responder" type="submit">Responder</button>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
